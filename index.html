@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leaders – Buteurs & Passeurs</title>
+
+  <!-- Tabulator CSS (CDN) -->
+  <link href="https://unpkg.com/tabulator-tables@6.2.2/dist/css/tabulator.min.css" rel="stylesheet" />
+  <link rel="icon" href="data:,">
+
+  <!-- Styles -->
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+  <section class="card">
+    <div class="card-header">
+      <h1 class="title">Classement des Meneurs</h1>
+      <p class="subtitle">Buteurs & Passeurs par division</p>
+    </div>
+
+    <div class="leaders-grid">
+      <!-- Left: Top Scorers -->
+      <div class="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Meilleurs Buteurs</h2>
+          <select id="selectScorers" class="select"></select>
+        </div>
+        <div id="tableScorers"></div>
+      </div>
+
+      <!-- Right: Top Assists -->
+      <div class="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Meilleurs Passeurs</h2>
+          <select id="selectAssists" class="select"></select>
+        </div>
+        <div id="tableAssists"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabulator JS (CDN) -->
+  <script src="https://unpkg.com/tabulator-tables@6.2.2/dist/js/tabulator.min.js"></script>
+  <!-- Logic -->
+  <script src="./widget.js"></script>
+</body>
+</html>
